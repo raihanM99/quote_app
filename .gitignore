@@ -1,0 +1,36 @@
+/config/database*
+
+# only ignore production.key, master.key is only for dev/test/staging
+/config/credentials/production.key
+
+/config/database*
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+/private_storage/*
+!/private_storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+/public/assets
+
+.~lock.*
+
+# Editor and OS files
+.DS_Store
+.idea/
+*.swp
