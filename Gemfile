@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
 # Sidekiq background processing
-gem 'sidekiq'
+gem "sidekiq"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 # Use mysql as the database for Active Record
@@ -52,7 +52,7 @@ end
 
 group :development do
   # Advanced Console
-  gem 'pry-rails'
+  gem "pry-rails"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
