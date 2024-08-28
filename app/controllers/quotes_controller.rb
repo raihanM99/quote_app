@@ -2,7 +2,7 @@ class QuotesController < ApplicationController
   before_action :find_quote, only: %I[show edit update destroy]
 
   def index
-    @quotes = Quote.ordered
+    @quotes = current_company.quotes.ordered
   end
 
   def new
@@ -10,7 +10,7 @@ class QuotesController < ApplicationController
   end
 
   def create
-    @quote = Quote.new(quote_params)
+    @quote = current_company.quotes.build(quote_params)
 
     if @quote.save
       respond_to do |format|
@@ -49,7 +49,7 @@ class QuotesController < ApplicationController
 
   def find_quote
     id = params[:id].to_i
-    @quote = Quote.find(id)
+    @quote = current_company.quotes.find(id)
   end
 
   def quote_params
