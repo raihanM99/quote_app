@@ -25,5 +25,6 @@ module App
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.hosts << "quote_app.test"
+    config.hosts << "quote-app-chi-wheat.vercel.app"
   end
 end
